@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(82, 127, 167);
+  background-image: url("https://www.transparenttextures.com/patterns/checkered-light-emboss.png");
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.mid-container {
+  height: 640px;
+  width: 650px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 8%;
+}
+
+.content-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 550px;
+  width: 500px;
+  padding: 20px;
+}
+
+.black-font {
+  color: black;
+}
+
+.kanit {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  border: 3px;
+}
+
+.border-r {
+  border-radius: 5%;
+}
+
+.rSongButton {
+ height: 50px;
+ width: 200px;
+}
+
+.b-background {
+  background-color: "";
+}

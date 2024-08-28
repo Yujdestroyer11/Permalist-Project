@@ -1,0 +1,41 @@
+  <div class="grid-container"> 
+    <div class="top-container">
+        <h1>Don't know what to sing? Welcome to the karaoke song generator</h1>   
+        <form action="/submit" method="POST">
+          <select name="type">
+            <option value="" data-display="Select">Song Type</option>
+            <option value="Broken-hearted">Broken-hearted</option>
+            <option value="Rap">Rap</option>
+            <option value="R & B">R & B</option>
+            <option value="Soft rock">Soft rock</option>
+          </select>
+          <select name="year">
+            <option value="">Year</option>
+            <option value="1980">80's</option>
+            <option value="1990">90's</option>
+            <option value="2000">00's</option>
+            <option value="2010">10's</option>
+            <option value="2020">20's</option>
+          </select>
+          <button type="submit">Go</button>
+        </form>
+      </div>  
+      <div class="mid-container">  
+      <% if (locals.data) { %>
+        <h2> <%= data.songTitle %> by <%= data.singer %></h2>
+      <%} else {  %>
+        <h2> Get a random song via type and year </h2>
+      <%}%>
+      </div>
+
+      <div class="bot-container">
+      <form action="/random" method="POST">
+          <input type="submit" value="Give me a random song">
+      </form>      
+      <% if (locals.rSong) { %>  
+        <h2><%= rSong.songTitle %> by <%= rSong.singer %></h2>
+      <%} else { %>  
+        <h2>Random Song</h2>
+      <% } %>  
+      </div>    
+  </div>  
